@@ -7,8 +7,10 @@ application would then call the corresponding python script that controls the se
 
 NOTE: This project was completed in January, 2017. I am just uploading all the code files now.
 
-Images of the final web application and product: 
 The Boe-Bot unfortunately belongs to the school so I was forced to take my project apart :(
+
+Images of the final web application and product: 
+
 
 
 

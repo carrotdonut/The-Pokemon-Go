@@ -1,0 +1,160 @@
+/*
+Name:			Kelly Jia
+File:			design.css
+Class:			TEJ4M1-01
+Date:			January 13, 2016
+Description:	This program contains all the styling of the web page and of the div buttons. Because of the styling properties,
+				the web page layout is created.
+*/
+
+/*
+The body essentially contains the whole web page.
+The pikachu background is added, as it is the background of the whole webpage. The image is then
+centered, set to cover the whole screen, and set so that it is not repeated.
+The default font for the webpage is set to Francois One (a custom font from Google Fonts) and the font size
+is set to 30 pixels.
+*/
+body 
+{
+	background: url("images/pikachuBackground.jpg");
+	background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	font-family: 'Francois One', sans-serif;
+	font-size:30px;
+}
+
+/*
+.btn applies styling to all the div buttons (as they all have the class "btn")
+This gives the buttons a 1 pixel thick black border, and a height of 76 pixels.
+*/
+.btn
+{
+	border:1px solid black;
+	height:76px;
+}
+
+/*
+.btn#leftBtn applies styling to only the left button. The button is given a width of 30% of the screen,
+it's floated left so it's on the left side of the screen, its given a background of a left arrow, and its given
+a border radius of 10 pixels to give it curved corners.
+*/
+.btn#leftBtn
+{
+	width: 30%;
+	float: left;
+	background: white url("images/leftArrow.png");
+	background-position:center;
+	background-size:80%;
+	background-repeat:no-repeat;
+	border-radius: 10px;
+}
+
+/*
+.btn#rightBtn applies styling to only the right button. The button is given a width of 30% of the screen,
+it's floated right so it's on the right side of the screen, its given a background of a right arrow, and its given
+a border radius of 10 pixels to give it curved corners.
+*/
+.btn#rightBtn
+{
+	width: 30%;
+	float: right;
+	background: white url("images/rightArrow.png");
+	background-position:center;
+	background-size:80%;
+	background-repeat:no-repeat;
+	border-radius: 10px;
+}
+
+/*
+.btn#upBtn applies styling to only the up button. The button is given a width of 30% of the screen,
+it has margins of 0 auto to center it, its given a background of an up arrow, and its given
+a border radius of 10 pixels to give it curved corners.
+*/
+.btn#upBtn
+{
+	margin: 0 auto;
+	width:30%;
+	background: white url("images/upArrow.png");
+	background-position:center;
+	background-size:80%;
+	background-repeat:no-repeat;
+	border-radius: 10px;
+}
+
+/*
+.btn#downBtn applies styling to only the down button. The button is given a width of 30% of the screen,
+it's given a margin of 0 auto to center it, it cleared the left float so it doesn't appear side by side as the left/right buttons, 
+its given a background of a down arrow, and its given a border radius of 10 pixels to give it curved corners.
+*/
+.btn#downBtn
+{
+	clear:left;
+	margin: 0 auto;
+	width:30%;
+	margin-top:16px;
+	background: white url("images/downArrow.png");
+	background-position:center;
+	background-size:80%;
+	background-repeat:no-repeat;
+	border-radius: 10px;
+}
+
+/*
+#directionBtns provides styling to the left/right/up/down buttons. It's given a slight left margin so it's not directly on the edge
+of the screen. Also, it's floated left as the direction buttons are on the left side of the screen.
+*/
+#directionBtns
+{
+	margin-left:10px;
+	width: 47%;
+	float: left;
+}
+
+/*
+#movementBtns provides styling to the forward/backward buttons. It's given a right margin so it's not directly on the right edge of
+the screen, it's floated left to be beside the direction buttons, and it centers the text to the middle of the div.
+*/
+#movementBtns
+{
+	width: 47%;
+	float: left;
+	margin-right:20px;
+	text-align: center;
+	vertical-align: center;
+	line-height:76px;
+}    
+
+/*
+#forwardBtn provides styling to the forward button. It's floated left as it's on the left side of the div, it's given a left margin so
+the button is not too close to the right button, and it's given a border radius of 10 pixels to give it curved corners.
+*/
+#forwardBtn
+{
+	width:30%;
+	float:left;
+	margin-left:50px;
+	border-radius: 10px;
+	background-color:white;
+}
+
+/*
+#backwardBtn provides styling to the backward button. It's floated right as it's on the right side of the div,
+and it's given a border radius of 10 pixels to give it curved corners.
+*/
+#backwardBtn
+{
+	width:30%;
+	float:right;
+	border-radius: 10px;
+	background-color:white;
+}
+
+/*
+#empty provides styling to the empty div that is above the forward/backward buttons. It's given a height of 76 pixels, the same as
+the rest of the buttons.
+*/
+#empty
+{
+	height:76px;
+}

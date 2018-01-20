@@ -1,0 +1,68 @@
+<!-- 
+Name:			Kelly Jia
+File:			index.html
+Class:			TEJ4M1-01
+Date:			January 13, 2016
+Description:	This program contains the general webpage of the game controller application. It incorporates the CSS script, custom
+				JavaScript script, and the webiopi JavaScript script. The program contains all the button created with div tags, and
+				the custom JavaScript program adds the touch events to the buttons in this program.
+-->
+
+<!doctype html>
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<!--Let the application be viewable on a mobile device-->
+		<meta name="mobile-web-app-capable" content="yes">
+		
+		<!--Set the width and height of the webpage to the dimensions of the device screen-->
+		<meta name="viewport" content="height = device-height, width = device-width, user-scalable = "no"/>
+		<title>Pokémon Go </title>
+		
+		<!--Incorporate the WebIOPi JavaScript library, custom JavaScript program, and the CSS program-->
+		<script type="text/javascript" src="webiopi.js"></script>
+		<script type="text/javascript" src="scripts/buttons.js"></script>
+		<link rel="stylesheet" type="text/css" href="styles/design.css">
+		
+		<!--Add an icon to the webpage so when the page is saved to the home screen on an iPhone, a custom icon is used instead of
+			the default one. 
+		-->
+		<link rel="apple-touch-icon" sizes="60x60" href="styles/images/logo.jpg">
+		
+		<!--Declare a custom font from Google Fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+	</head>
+	
+	<!--The body contains all the divs (buttons) of the game controller-->
+	<body>
+		<br>
+		
+		<!--Create a div to hold the left/right/up/down buttons-->
+		<div id="directionBtns">
+			<!--Create a div to represent the up button-->
+			<div class="btn" id="upBtn"></div>
+			
+			<!--Create a div to hold both the left button and right button, and then inside the div, create 2 divs for the 2 buttons-->
+			<div id="LRBtn">
+				<div class="btn" id="leftBtn"></div>
+				<div class="btn" id="rightBtn"></div>
+			</div>
+			
+			<!--Create a div to represent the down button-->
+			<div class="btn" id="downBtn"></div>
+		</div>
+		
+		<!--Create a div to hold the forward and backwards buttons-->
+		<div id="movementBtns">
+			<!--Since the forward and backward buttons are lined up with the left/right buttons, create an empty div before the
+				forward and backward buttons are created
+			-->
+			<div id="empty"></div>
+			<div class="btn" id="forwardBtn">F</div>
+			<div class="btn" id="backwardBtn">B</div>
+		</div>
+	</body>
+
+</html>

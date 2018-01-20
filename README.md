@@ -10,7 +10,7 @@ NOTE: This project was completed in January, 2017. I am just uploading all the c
 The Boe-Bot unfortunately belongs to the school so I was forced to take my project apart :(
 
 Images of the final web application and product: 
-![alt text](https://raw.githubusercontent.com/carrotdonut/The-Pokemon-Go/master/project_images/to/IMG5892.JPG)
+![alt text](https://raw.githubusercontent.com/carrotdonut/The-Pokemon-Go/master/project_images/to/IMG_5892.JPG)
 
 
 
